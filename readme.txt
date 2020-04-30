@@ -1,6 +1,25 @@
-In this Current Version, we need to give some options(specifically schema to the graphql endpoint).
-For this, we created a folder called schema which contains a file called schema.js.
-Here we will specify how our graph will look like: 
-1) The data types of the object nodes,
-2) The relationship between those data types
-3) How to query and return the data. 
+In this Current Version,
+Fixes:
+Schema : GraphQL** instead of GraphQl**
+
+Progress:
+Connected Schema to the server and implemented a dummy array to act as database.
+Changed the type of ID to GraphQLID instead of GraphQLString
+enabled GraphiQL
+
+Query is sent in the format:
+{
+  RootQueryfield(args:"whatever"){
+  fieldofObject1
+  fieldofObject2	
+  }
+}
+
+eg:.
+{
+  book(id:"2"){
+    name
+    genre
+  }
+
+}
